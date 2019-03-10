@@ -1,0 +1,27 @@
+{
+	"name": "document.contains",
+	"version": "0.0.0",
+	"description": "Polyfill/shim for `document.contains`",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/document.contains.git"
+	},
+	"keywords": [
+		"contains",
+		"document",
+		"element",
+		"node",
+		"polyfill",
+		"shim"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/document.contains/issues"
+	},
+	"homepage": "https://github.com/ljharb/document.contains#readme"
+}
