@@ -6,7 +6,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "es-shim-api --bound",
 		"posttest": "npx aud"
 	},
 	"repository": {
@@ -28,7 +28,11 @@
 	},
 	"homepage": "https://github.com/ljharb/document.contains#readme",
 	"devDependencies": {
+		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^13.1.1",
 		"eslint": "^5.15.1"
+	},
+	"dependencies": {
+		"define-properties": "^1.1.3"
 	}
 }
