@@ -1,6 +1,6 @@
 {
 	"name": "document.contains",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Polyfill/shim for `document.contains`",
 	"main": "index.js",
 	"scripts": {
