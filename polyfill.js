@@ -3,8 +3,13 @@
 var implementation = require('./implementation');
 
 module.exports = function getPolyfill() {
-	if (typeof document === 'undefined') {
-		return implementation;
+	if (typeof document !== 'undefined') {
+		if (document.contains) {
+			return document.contains;
+		}
+		if (document.body && document.body.contains) {
+			return document.body.contains;
+		}
 	}
-	return document.contains || document.body.contains || implementation;
+	return implementation;
 };
