@@ -4,6 +4,7 @@
 	"description": "Polyfill/shim for `document.contains`",
 	"main": "index.js",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
@@ -35,9 +36,10 @@
 	"homepage": "https://github.com/ljharb/document.contains#readme",
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^13.1.1",
+		"@ljharb/eslint-config": "^15.1.0",
 		"auto-changelog": "^1.16.2",
-		"eslint": "^5.15.1"
+		"eslint": "^6.8.0",
+		"safe-publish-latest": "^1.1.4"
 	},
 	"dependencies": {
 		"define-properties": "^1.1.3"
