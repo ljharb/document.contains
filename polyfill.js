@@ -8,7 +8,7 @@ module.exports = function getPolyfill() {
 			return document.contains;
 		}
 		if (document.body && document.body.contains) {
-			return document.body.contains;
+			return document.body.contains.bind(document.body);
 		}
 	}
 	return implementation;
