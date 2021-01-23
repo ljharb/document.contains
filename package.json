@@ -8,8 +8,8 @@
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"tests-only": "es-shim-api --bound",
-		"posttest": "npx aud --production",
+		"tests-only": "nyc es-shim-api --bound",
+		"posttest": "aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -40,6 +40,7 @@
 		"aud": "^1.1.2",
 		"auto-changelog": "^2.0.0",
 		"eslint": "^7.2.0",
+		"nyc": "^10.3.2",
 		"safe-publish-latest": "^1.1.4"
 	},
 	"dependencies": {
