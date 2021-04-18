@@ -4,7 +4,8 @@
 	"description": "Polyfill/shim for `document.contains`",
 	"main": "index.js",
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
+		"prepublishOnly": "safe-publish-latest",
 		"lint": "eslint .",
 		"postlint": "nyc es-shim-api --bound",
 		"pretest": "npm run lint",
